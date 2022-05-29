@@ -94,7 +94,8 @@ a:hover {
   font-size: 18px;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a.current {
   color: #333;
 }
 
