@@ -79,37 +79,43 @@ a:hover {
 /* Utility Classes Ends Here*/
 
 /* Navbar Starts Here */
-#navbar {
-  background: #eaf6f6;
-  text-align: left;
-  height: 60px;
-}
-
-.navbar .logo {
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.navbar a {
-  font-size: 18px;
-}
-
-.navbar a:hover,
-.navbar a.current {
-  color: #333;
-}
-
-.navbar .container {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #333;
+  color: #fff;
 }
 
-.navbar ul {
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
-/* Navbar Ends Here */
+.navbar-links li {
+  list-style-type: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+/* Navbar Ends Here*/
+
 /* Top Container Stuff Starts Here */
 .top-container {
   background-color: #e4f9f5;
