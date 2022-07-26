@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  color: #40515e;
+  /* color: #66bfbf; */
   text-align: center;
-  margin: 0;
-  padding: 0;
   font-family: "Merriweather", serif;
 }
 
@@ -49,6 +49,7 @@ a {
   color: #11999e;
   margin: 10px 20px;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 a:hover {
@@ -59,14 +60,9 @@ a:hover {
 .container {
   /* border: 5px solid aqua; */
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   overflow: auto;
-  padding: 0 20px;
-}
-
-.logo {
-  font-size: x-large;
-  font-weight: bold;
+  padding: 0 30px;
 }
 
 .heads-primary {
@@ -81,69 +77,47 @@ a:hover {
 
 /* Navbar Starts Here */
 .navbar {
+  background: #e4f9f5;
+  color: #11999e;
+  height: 70px;
+}
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+.navbar .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  justify-content: space-between;
+  height: 100%;
 }
-
-.brand-title {
-  font-size: 1.2rem;
-  margin: 0.5rem;
-  padding: 1rem;
-}
-
-.navbar-links ul {
-  margin: 0;
-  padding: 0;
+.nav {
   display: flex;
+  font-size: 18px;
+  font-weight: bold;
 }
-
-.navbar-links li {
-  list-style-type: none;
-}
-
-.navbar-links li a {
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-  display: block;
-  font-size: 0.9rem;
-}
-
-.navbar-links li:hover {
-  background-color: #555;
-}
-
 /* Navbar Ends Here*/
 
 /* Top Container Stuff Starts Here */
 .top-container {
+  min-height: ;
   background-color: #e4f9f5;
   padding-top: 50px;
   position: relative;
 }
 
-.mountain {
-}
-
-/* .middle-container {
-  margin: 100px 0 100px 0;
-} */
-
 .top-cloud {
   position: absolute;
-  right: 300px;
-  top: 50px;
-  animation: wind 60s linear infinite reverse;
+  right: 100px;
+  top: 30px;
+  animation: wind 90s linear infinite reverse;
 }
 
 .bottom-cloud {
   position: absolute;
-  left: 300px;
-  bottom: 300px;
-  animation: winds 60s linear infinite reverse;
+  left: 100px;
+  bottom: 200px;
+  animation: winds 90s linear infinite reverse;
 }
 /* Top Container Stuff Ends Here */
 
@@ -226,6 +200,10 @@ a:hover {
 .bottom-container {
   background-color: #66bfbf;
   padding: 50px 0 20px;
+}
+.footer-link {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .copyright {
