@@ -17,9 +17,9 @@
     <div class="container">
       <div class="logo">Hello There!</div>
       <ul class="nav">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -35,7 +35,59 @@
   </div>
   <hr />
   <!-- Top Container Ends Here -->
-  </header>
+
+  <!-- About Section Starts Here -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img class="young-man" src="./images/young-man.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm currently employed as an Automated Broadcast Director. In the past 16 years, I've worked on most
+            aspects of television news production. I started out in 2006 in Ft. Myers
+            Florida as a production assistant and within 2 years, worked my way up to graphics operation, technical
+            directing and directing.
+
+            I worked for another 2 more years before moving to Houston TX as a full time Television Director. I've spent
+            the past 12
+            years honing my craft and working in all sorts of stressful environments due to breaking news and breaking
+            weather
+            coverage.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2014-Current</span><br>Lorem ipsum dolor sit amet consectetur.</li>
+              <li><span>2010-2014</span><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+              <li><span>2006-2010</span><br>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2006</span><br>BA of Communicatoins</li>
+              <li><span>2001-2004</span><br>AA General Education</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Introduction Starts Here -->
   <section id="introduction" class="introduction">
@@ -54,30 +106,34 @@
   </section>
   <!-- Introduction Ends Here -->
 
-  <!-- Skills Starts Here -->
-  <section id="skills" class="skills">
+  <!-- Skills Starts Here  -->
+  <section class="skills">
     <div class="container">
-      <h2 class="heads-primary">My Skills</h2>
-      <div class="my-skills bg-primary">
-        <img src="./images/coding.png" alt="" />
-        <!-- <a href="https://www.flaticon.com/free-icons/html" title="html icons"
-            >Html icons created by justicon - Flaticon</a -->
+      <h2>My Skills</h2>
+      <div class="my-skills background html">
+        <img src="./images/coding.png" alt="">
+        <!-- https://www.flaticon.com/premium-icon/coding_2085206?term=html&related_id=2085206 -->
         <p>I first started my new adventure into HTML and CSS in the start of 2021. I haven't been working on this full
-          time, but I've been slowly learning and expanding my skills.
+          time, but I've been slowly learning and expanding my skills. I've been using FreeCodeCamp, Youtube, & Udemy as
+          my sources for learning and education. I read CSS: The Definitive Guide: Visual Presentation for the Web and
+          HTML and CSS: Design and Build Websites. These two books I research with to help and aid with my learning of
+          the principles of Front End Development.
         </p>
       </div>
-      <div class="my-skills-2 bg-primary">
+
+      <div class="my-skills-2 background camera">
         <p>In the past 16 years, I've worked on most aspects of television news production. I started out in 2006 in Ft.
           Myers Florida as a production assistant and within 2 years, I worked my way up to graphics operation,
           technical directing and directing. <br><br>I worked for another 2 more years before moving to Houston TX as a
           full time Television Director. I've spent the past 12 years honing my craft and working in all sorts of
           stressful environments due to breaking news and breaking weather coverage.
         </p>
-        <img src="./images/camera-dolly.png" alt="" />
+        <img src="https://i.postimg.cc/28FRt5CM/7657130.png" alt="">
+        <!-- https://www.flaticon.com/free-icon/tv-camera_7657130?term=tv%20camera&related_id=7657130 -->
       </div>
     </div>
-    <hr />
   </section>
+  <hr>
   <!-- Skills End Here -->
 
   <!-- Contact Me Starts Here -->
@@ -103,6 +159,22 @@
     <p class="copyright">© 2022 Robert Nagy</p>
     <!-- Footer Ends Here -->
   </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
 </body>
 
 </html>
