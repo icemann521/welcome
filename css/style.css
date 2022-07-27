@@ -8,31 +8,27 @@ html,
 body {
   /* color: #66bfbf; */
   text-align: center;
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   color: #66bfbf;
-  font-size: 5rem;
+  /* font-size: 5rem; */
   margin: 50px auto 0 auto;
 }
 
 h2 {
   color: #66bfbf;
-  font-size: 2rem;
   font-weight: bold;
   padding-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
   color: #11999e;
-  font-family: "Montserrat", sans-serif;
 }
 
 p {
   line-height: 2;
-  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -48,9 +44,7 @@ hr {
 
 a {
   color: #11999e;
-  margin: 10px 20px;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
@@ -66,25 +60,26 @@ a:hover {
   overflow: auto;
   padding: 0 30px;
 }
-
-.navbar {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+.bg-primary {
+  background: #e5f9f5;
+  color: #333;
 }
 .heads-primary {
   font-size: 3rem;
 }
-
-.bg-primary {
-  background: #e5f9f5;
-  color: #333;
+.name {
+  font-size: 5rem;
+  padding-bottom: 20px;
+}
+.subtitle {
+  font-size: 2rem;
 }
 /* Utility Classes Ends Here*/
 
 /* Navbar Starts Here */
 .navbar {
   background: #e4f9f5;
-  color: #11999e;
+  /* color: #11999e; */
   height: 70px;
 }
 .navbar .logo {
@@ -97,10 +92,11 @@ a:hover {
   justify-content: space-between;
   height: 100%;
 }
-.nav {
+.navbar ul {
   display: flex;
-  font-size: 18px;
-  font-weight: bold;
+}
+.navbar ul li {
+  margin-left: 20px;
 }
 /* Navbar Ends Here*/
 
@@ -127,80 +123,6 @@ a:hover {
 }
 /* Top Container Stuff Ends Here */
 
-/* About Section Starts Here */
-.young-man {
-  width: 40%;
-}
-#about {
-  /* padding: 80px 0; */
-  color: #ababab;
-  text-align: left;
-}
-/* .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
-
-.about-col-1 {
-  border: 5px solid green;
-  flex-basis: 35%;
-  /* this makes the column 35% wide */
-}
-.about-col-1 img {
-  width: 100%;
-  border-radius: 15px;
-}
-.about-col-2 {
-  border: 5px solid green;
-  flex-basis: 60%;
-}
-.sub-title {
-  font-size: 60px;
-  font-weight: 600;
-}
-.tab-titles {
-  display: flex;
-  margin: 20px 0 40px;
-}
-.tab-links {
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-}
-.tab-links::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #ff004f;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.3s;
-}
-.tab-links.active-link::after {
-  width: 50%;
-}
-.tab-contents ul li {
-  list-style: none;
-  margin: 10px 0;
-}
-.tab-contents ul li span {
-  color: #e6676b;
-  font-size: 14px;
-}
-.tab-contents {
-  display: none;
-  /* this hides all the content */
-}
-.tab-contents.active-tab {
-  display: block;
-  /* this makes the content visible on the active-tab */
-}
-/* About Section Ends Here */
-
 /* Introduction Starts Here */
 .young-man {
   width: 40%;
@@ -209,8 +131,10 @@ a:hover {
 #introduction {
   height: 100%;
 }
-
-#introduction .testimonial {
+.introduction p {
+  font-size: 1.1rem;
+}
+.introduction .testimonial {
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-bottom: 40px;
@@ -263,6 +187,9 @@ a:hover {
   width: 200px;
   margin-left: 20px;
 }
+.my-skills h2 {
+  font-size: 3rem;
+}
 /* Skills End Here */
 
 /* Contact Me Starts Here */
@@ -294,53 +221,16 @@ a:hover {
 }
 
 .btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc48d);
-  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #960000;
+  border-radius: 10px;
+  padding: 12px 22px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  margin: 20px 30px;
 }
 
 /* Footer Ends Here */
-
-/* Keframes Start Here */
-@keyframes wind {
-  from {
-    right: 1200px;
-  }
-
-  to {
-    right: 100px;
-  }
-}
-
-@keyframes winds {
-  from {
-    left: 1200px;
-  }
-
-  to {
-    right: 100px;
-  }
-}
-
-/* Keyframes End Here*/
