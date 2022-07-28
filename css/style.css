@@ -1,3 +1,4 @@
+/* Main Styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,20 +7,20 @@
 
 html,
 body {
-  /* color: #66bfbf; */
+  background: rgb(249, 249, 249);
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-  color: #66bfbf;
+  /* color: #66bfbf; */
   /* font-size: 5rem; */
   margin: 50px auto 0 auto;
 }
 
 h2 {
-  color: #66bfbf;
-  font-weight: bold;
+  /* color: #66bfbf; */
+  /* font-weight: bold; */
   padding-bottom: 10px;
 }
 
@@ -36,14 +37,14 @@ ul {
 }
 
 hr {
-  border: dotted #eaf6f6 6px;
+  border: dotted #11999e 6px;
   border-bottom: none;
   width: 4%;
   margin: 75px auto;
 }
 
 a {
-  color: #11999e;
+  /* color: #11999e; */
   text-decoration: none;
   font-weight: bold;
 }
@@ -51,6 +52,7 @@ a {
 a:hover {
   color: #333;
 }
+/* Main Styling Ends */
 
 /* Utility Classes Start Here */
 .container {
@@ -61,25 +63,24 @@ a:hover {
   padding: 0 30px;
 }
 .bg-primary {
-  background: #e5f9f5;
+  background: #e4f9f5;
   color: #333;
 }
-.heads-primary {
-  font-size: 3rem;
-}
 .name {
+  color: #66bfbf;
   font-size: 5rem;
   padding-bottom: 20px;
 }
 .subtitle {
+  color: #66bfbf;
   font-size: 2rem;
+  font-weight: bolder;
 }
 /* Utility Classes Ends Here*/
 
 /* Navbar Starts Here */
 .navbar {
   background: #e4f9f5;
-  /* color: #11999e; */
   height: 70px;
 }
 .navbar .logo {
@@ -97,12 +98,15 @@ a:hover {
 }
 .navbar ul li {
   margin-left: 20px;
+  font-size: 18px;
+}
+.navbar ul li a {
+  color: black;
 }
 /* Navbar Ends Here*/
 
 /* Top Container Stuff Starts Here */
 .top-container {
-  /* min-height: */
   background-color: #e4f9f5;
   padding-top: 50px;
   position: relative;
@@ -124,44 +128,53 @@ a:hover {
 /* Top Container Stuff Ends Here */
 
 /* Introduction Starts Here */
-.young-man {
-  width: 40%;
-}
-
-#introduction {
+.introduction {
   height: 100%;
 }
+.introduction .young-man {
+  width: 40%;
+}
+.introduction .about-me {
+  color: #66bfbf;
+  font-size: 3rem;
+  margin: 25px;
+}
 .introduction p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 25px;
+}
+.introduction .kprc {
+  margin: 14px;
+  width: 15%;
+  border-radius: 10px;
+}
+.introduction .lead {
+  font-size: 1rem;
+  font-weight: bold;
 }
 .introduction .testimonial {
   border: 2px solid rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  opacity: 0.9;
-}
-
-.introduction .testimonial {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   text-align: left;
-  margin: auto;
+  border-radius: 10px;
+  margin: 25px;
 }
-
-.introduction .testimonial img {
-  width: 125px;
-  height: 125px;
-  margin-right: 20px;
-}
-
 /* Introduction Ends Here */
 
 /* Skills Start Here */
+.skills {
+  height: 100%;
+}
+.skills h2 {
+  color: #66bfbf;
+  font-size: 3rem;
+}
 .my-skills {
   background: #e2f9f5;
   border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   margin: 25px;
@@ -176,6 +189,7 @@ a:hover {
 .my-skills-2 {
   background: #e2f9f5;
   border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   display: flex;
   margin: 25px;
   align-items: center;
@@ -187,50 +201,4 @@ a:hover {
   width: 200px;
   margin-left: 20px;
 }
-.my-skills h2 {
-  font-size: 3rem;
-}
 /* Skills End Here */
-
-/* Contact Me Starts Here */
-.contact-me {
-  height: 370px;
-}
-
-.contact-message {
-  width: 40%;
-  margin: 40px auto 60px;
-}
-
-/* Contact Me Ends Here */
-
-/* Footer Starts Here */
-.bottom-container {
-  background-color: #66bfbf;
-  padding: 50px 0 20px;
-}
-.footer-link {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.copyright {
-  color: #eaf6f6;
-  font-size: 0.75rem;
-  padding: 20px 0;
-}
-
-.btn {
-  display: inline-block;
-  font-size: 18px;
-  color: white;
-  background: #960000;
-  border-radius: 10px;
-  padding: 12px 22px;
-  cursor: pointer;
-  border: none;
-  font-size: 18px;
-  margin: 20px 30px;
-}
-
-/* Footer Ends Here */
