@@ -201,4 +201,32 @@ a:hover {
   width: 200px;
   margin-left: 20px;
 }
+.my-skills p,
+.my-skills-2 p {
+  font-size: 1rem;
+  font-weight: bold;
+}
 /* Skills End Here */
+
+/* Contact Me Starts Here */
+.contact-me {
+  height: 370px;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #960000;
+  border-radius: 10px;
+  padding: 12px 22px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  margin: 20px 30px;
+}
+/* Contact Me Ends Here */
