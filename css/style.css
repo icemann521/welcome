@@ -210,13 +210,32 @@ a:hover {
 
 /* Contact Me Starts Here */
 .contact-me {
-  height: 370px;
+  height: 100%;
+}
+.contact-me h2 {
+  color: #66bfbf;
+  font-size: 3rem;
+}
+.contact-message {
+  background: #e2f9f5;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  margin: 25px;
+  align-items: center;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: left;
+  /* margin: 40px auto 60px; */
+}
+.contact-message img {
+  width: 180px;
+}
+.contact-message p {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.contact-message {
-  width: 40%;
-  margin: 40px auto 60px;
-}
 .btn {
   display: inline-block;
   font-size: 18px;
@@ -230,3 +249,35 @@ a:hover {
   margin: 20px 30px;
 }
 /* Contact Me Ends Here */
+
+/* Footer Starts Here */
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+.footer-link {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #960000;
+  border-radius: 10px;
+  padding: 12px 22px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  margin: 20px 30px;
+}
+/* Footer Ends Here */
