@@ -217,6 +217,93 @@ a:hover {
 /* Contact Me Ends Here */
 
 /* About Page Starts Here */
+/* About Section Starts Here */
+#about {
+  height: 100%;
+  padding: 80px 0;
+  text-align: left;
+  /* color: #ababab; */
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked. */
+}
+.about-col-1 {
+  background: #e2f9f5;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  flex-basis: 35%;
+  /* this makes the column 35% wide */
+}
+.about-col-1 img {
+  padding: 90px 0;
+  width: 100%;
+}
+.about-col-2 {
+  background: #e2f9f5;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  flex-basis: 60%;
+  padding: 0 30px;
+  /* this makes the column 60% */
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+}
+#about p {
+  font-weight: bold;
+}
+#about span {
+  font-weight: bold;
+}
+#about ul {
+  font-weight: bold;
+}
+.tab-titles {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #e6676b;
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+  /* this hides all the content */
+}
+.tab-contents.active-tab {
+  display: block;
+  /* this makes the content visible on the active-tab */
+}
+
 .images img:hover {
   opacity: 0.7;
 }
@@ -226,6 +313,10 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.section-header h4 {
+  font-size: 2rem;
+  margin: 20px;
 }
 .section-header h2 {
   font-size: 3rem;

@@ -25,27 +25,66 @@
   </div>
   <!-- Navbar Ends Here -->
 
-  <!-- Top Container Starts Here -->
-  <div class="top-container">
-    <img class="top-cloud" src="./images/cloud.png" alt="cloud" />
-    <h1 class="name">I'm Robert</h1>
-    <h2 class="subtitle">Automated Broadcast Director / Future Front End Developer</h2>
-    <img class="bottom-cloud" src="./images/cloud.png" alt="cloud-image" />
-    <img class="mountain" src="./images/mountain.png" alt="mountain" />
+  <!-- About Section Starts Here -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/information.png">
+          <!-- https://www.flaticon.com/premium-icon/information_5742268?term=about%20me&related_id=5742268 -->
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="sub-title-lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sapiente illo
+            excepturi amet illum
+            assumenda ea repellat veritatis quibusdam magnam nesciunt, dolorum iusto mollitia ut laboriosam quaerat
+            aperiam delectus eligendi odit ducimus? Explicabo, dolores vero! Vitae similique hic natus nulla.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit.</li>
+              <li><span>Lorem, ipsum dolor.</span><br>Lorem ipsum dolor sit amet.</li>
+              <li><span>Lorem ipsum dolor sit.</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2014-Current | Automated Broadcast Director | KPRC-TV</span><br>Direct fast paced graphic
+                intensive
+                newscasts and shows.
+              </li>
+              <li><span>2010-2014 | Director | KHOU-TV</span><br>Directed Emmy Award winning,graphic
+                intensive newscasts.</li>
+              <li><span>2006-2010 | Production Assistant | WINK-TV</span><br>Production assitant responsibilites.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021-Current</span><br>Self Learning of Front End Development. HTML, CSS & JavaScript</li>
+              <li><span>2004-2006</span><br>BA Communications | Rowan University</li>
+              <li><span>2001-2004</span><br>AA General Education | Ocean County Community College</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <hr>
-  <!-- Top Container Ends Here -->
 
   <!-- What I do Starts Here -->
   <section class="images flex-grid">
-    <div class="container">
-
-
-    </div>
     <header class="section-header">
-      <h4>This is what I do</h4>
+      <h4>A glimpse behind the scenes</h4>
       <h2>Automated Broadcast Director</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusantium magni nam iure consectetur sapiente!
+      <p>Various pictures of the control room, studio and building. I've also attached some director tracks, this will
+        give you an idea of what I do.
       </p>
     </header>
     <div class="row">
@@ -68,12 +107,14 @@
     </div>
 
     <div class="youtube-video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/uga8GWzdv3c" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qBo_ga3p9YM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
     <div class="youtube-video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/uga8GWzdv3c" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UekStE1VITY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
   </section>
 
@@ -88,6 +129,22 @@
     <p class="copyright">© 2022 Robert Nagy</p>
   </div>
   <!-- Footer Ends Here -->
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
 </body>
 
 </html>
