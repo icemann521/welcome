@@ -76,6 +76,18 @@ a:hover {
   font-size: 2rem;
   font-weight: bolder;
 }
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #960000;
+  border-radius: 10px;
+  padding: 12px 22px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  margin: 20px 30px;
+}
 /* Utility Classes Ends Here*/
 
 /* Navbar Starts Here */
@@ -131,82 +143,45 @@ a:hover {
 .introduction {
   height: 100%;
 }
-.introduction .young-man {
+/* .introduction .young-man {
   width: 40%;
-}
+} */
 .introduction .about-me {
   color: #66bfbf;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 25px;
 }
-.introduction p {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 25px;
-}
-.introduction .kprc {
-  margin: 14px;
-  width: 15%;
-  border-radius: 10px;
-}
-.introduction .lead {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.introduction .testimonial {
+.testimonial {
   border: 2px solid rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   text-align: left;
   border-radius: 10px;
   margin: 25px;
+}
+.testimonial p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px;
+}
+.testimonial .kprc {
+  margin: 12px;
+  width: 150px;
+  border-radius: 10px;
+}
+.testimonial .html {
+  margin: 12px;
+  width: 175px;
+}
+.testimonial .camera {
+  margin: 12px;
+  width: 175px;
+  transform: scaleX(-1);
+}
+.testimonial .btn {
+  margin: 40px auto 60px;
 }
 /* Introduction Ends Here */
-
-/* Skills Start Here */
-.skills {
-  height: 100%;
-}
-.skills h2 {
-  color: #66bfbf;
-  font-size: 3rem;
-}
-.my-skills {
-  background: #e2f9f5;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  margin: 25px;
-  padding: 20px;
-  line-height: 1.5;
-  text-align: left;
-}
-.my-skills img {
-  width: 170px;
-  margin-right: 25px;
-}
-.my-skills-2 {
-  background: #e2f9f5;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  display: flex;
-  margin: 25px;
-  align-items: center;
-  padding: 20px;
-  line-height: 1.5;
-  text-align: left;
-}
-.my-skills-2 img {
-  width: 200px;
-  margin-left: 20px;
-}
-.my-skills p,
-.my-skills-2 p {
-  font-size: 1rem;
-  font-weight: bold;
-}
-/* Skills End Here */
 
 /* Contact Me Starts Here */
 .contact-me {
@@ -214,7 +189,7 @@ a:hover {
 }
 .contact-me h2 {
   color: #66bfbf;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .contact-message {
   background: #e2f9f5;
@@ -235,19 +210,10 @@ a:hover {
   font-size: 1rem;
   font-weight: bold;
 }
-
-.btn {
-  display: inline-block;
-  font-size: 18px;
-  color: white;
-  background: #960000;
-  border-radius: 10px;
-  padding: 12px 22px;
-  cursor: pointer;
-  border: none;
-  font-size: 18px;
-  margin: 20px 30px;
+.contact-me .btn {
+  margin: 40px auto 60px;
 }
+
 /* Contact Me Ends Here */
 
 /* Footer Starts Here */
@@ -266,18 +232,5 @@ a:hover {
   color: #eaf6f6;
   font-size: 0.75rem;
   padding: 20px 0;
-}
-
-.btn {
-  display: inline-block;
-  font-size: 18px;
-  color: white;
-  background: #960000;
-  border-radius: 10px;
-  padding: 12px 22px;
-  cursor: pointer;
-  border: none;
-  font-size: 18px;
-  margin: 20px 30px;
 }
 /* Footer Ends Here */
