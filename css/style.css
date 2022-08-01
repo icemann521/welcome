@@ -142,10 +142,8 @@ a:hover {
 /* Introduction Starts Here */
 .introduction {
   height: 100%;
+  /* background: #e4f9f5; */
 }
-/* .introduction .young-man {
-  width: 40%;
-} */
 .introduction .about-me {
   color: #66bfbf;
   font-size: 3.5rem;
@@ -221,7 +219,7 @@ a:hover {
 /* About Section Starts Here */
 #about {
   height: 100%;
-  padding: 80px 0;
+  padding: 40px 0;
   text-align: left;
   /* color: #ababab; */
 }
@@ -306,7 +304,20 @@ a:hover {
   /* this makes the content visible on the active-tab */
 }
 
-.images img:hover {
+/* New What I do STarts Here */
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+.grid-header img {
+  width: 100%;
+  /* box-shadow: */
+}
+/* New What I do ends here */
+
+/* What I Do STarts HEre*/
+/* .images img:hover {
   opacity: 0.7;
 }
 .section-header {
@@ -316,12 +327,12 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+.section-header h2 {
+  font-size: 3rem;
+}
 .section-header h4 {
   font-size: 2rem;
   margin: 20px;
-}
-.section-header h2 {
-  font-size: 3rem;
 }
 .flex-grid .row {
   display: flex;
@@ -330,15 +341,16 @@ a:hover {
 }
 .flex-grid .column {
   flex: 25%;
-  max-width: 25%;
+  max-width: 75%;
   padding: 0 4px;
 }
 .row img {
   width: 350px;
-  /* display: block; */
-  /* margin-left: auto;
-  margin-right: auto; */
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+/* What I do Ends Here*/
 
 /* Director Track Buttons Start Here */
 .buttons {
