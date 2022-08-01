@@ -139,12 +139,76 @@ a:hover {
 }
 /* Top Container Stuff Ends Here */
 
+/* <!-- NEW INTRODUCTION STARS HERE --> */
+.new-introduction {
+  height: 100%;
+}
+.container .new-testimonial {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+  margin: 25px 35px;
+}
+.new-young-man {
+  width: 200px;
+  margin: 20px;
+}
+.new-testimonial span {
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-weight: bold;
+}
+.new-testimonial p {
+  font-weight: bold;
+  line-height: 2;
+  padding: 0 20px 0 0;
+}
+.new-testimonial-2 {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+  margin: 25px 35px;
+}
+.new-testimonial-2 p {
+  font-weight: bold;
+  line-height: 2;
+  padding: 20px;
+}
+.new-html {
+  width: 200px;
+  margin: 20px;
+}
+.new-testimonial-3 {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+  margin: 25px 35px;
+}
+.new-testimonial-3 p {
+  font-weight: bold;
+  line-height: 2;
+  padding: 20px;
+}
+.new-camera {
+  width: 200px;
+  margin: 20px;
+  transform: scaleX(-1);
+}
+
+/* <!-- NEW INTRODUCTION ENDS HERE --> */
+
 /* Introduction Starts Here */
-.introduction {
+/* .introduction {
   height: 100%;
   /* background: #e4f9f5; */
-}
-.introduction .about-me {
+
+/* .introduction .about-me {
   color: #66bfbf;
   font-size: 3.5rem;
   margin: 25px;
@@ -178,7 +242,7 @@ a:hover {
 }
 .testimonial .btn {
   margin: 40px auto 60px;
-}
+} */
 /* Introduction Ends Here */
 
 /* Contact Me Starts Here */
